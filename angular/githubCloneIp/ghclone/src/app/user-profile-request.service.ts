@@ -3,9 +3,7 @@ import { UserProfile } from './user-profile';
 import { UserRepositories } from './user-repositories';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { FormComponent } from './form/form.component';
-import { Observable } from 'rxjs';
-//import 'rxjs/add/operator/map'
+
 
 @Injectable({
   providedIn: 'root',
