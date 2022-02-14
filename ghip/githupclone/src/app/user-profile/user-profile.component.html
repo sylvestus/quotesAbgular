@@ -1,0 +1,75 @@
+
+<div class="container-fluid cont">
+
+    <div class="row">
+        <div class="col-md-12 logo"> <br>
+            <img src="../../assets/images/march.png" alt="">
+          <h4> Welcome to your github search page</h4>
+            <br>
+        </div>
+        <div class="row">
+            <app-form (profileSearch)="search($event)"></app-form><br>
+        </div>
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-5 profile"><br>
+             <h3>user profile</h3>
+            <img src="{{userProfile.avatar_url}}" alt=""> <br>
+        </div>
+        <div class="col-md-5 gh"><img src="../../assets/images/gh.png" alt=""></div>
+    </div>
+    <div class="row profileinfo justify-content-center">
+        <div class="col-sm-2 profDetails">
+           <h4>username</h4> 
+            {{userProfile.login}} <br>
+        </div>
+        <div class="col-sm-2">
+             <h4>following</h4>
+            {{userProfile.following}} <br>
+        </div>
+        <div class="col-sm-2">
+            <h4> followers</h4>
+            {{userProfile.followers}} <br>
+        </div>
+        <div class="col-sm-2">
+            <h4> email</h4>
+            {{userProfile.email}}
+        </div>
+        <div class="col-sm-2">
+             <h4>created on:</h4>
+            {{userProfile.created_at}}  
+             <!-- |customDated -->
+        </div>
+
+    </div>
+
+
+
+    <div class="row justify-content-center repo">
+        <h3>Repositories</h3>
+        <div class="col-sm-5 " *ngFor="let repos of userRepos">
+            <div class="card repocards">
+                <div class="card-body">
+
+                    <h5 class="card-title" appUnderline> reponame: {{repos.name}}</h5>
+                    <p class="card-text"> description <br> {{repos.description}} <br><br>
+                        language <br> {{repos.laguage}}
+                    </p>
+
+                    <a href="{{repos.html_url}}" class="btn btn-primary">view in github</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row footer">
+        <span><h5>designed by silvano</h5></span><br>
+        <div class="col sm-3"><i class="fa fa-facebook-square icon" aria-hidden="true"></i></div>
+        <div class="col sm-3"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+        <div class="col sm-3"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        <div class="col sm-3"> <i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+        <div class="col sm-3"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+    </div>
+</div>
