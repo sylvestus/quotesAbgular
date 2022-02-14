@@ -76,10 +76,6 @@ export class UserProfileRequestService {
     this.http.get<ApiResponseII>(url).toPromise().then(response => {
       this.userRepos=response!;
      
-       //this.userRepos.name = response!.name;
-       //this.userRepos.description=response!.description
-       //this.userRepos.language=response!.language
-       //this.userRepos.html_url=response!.html_url
 
        
       resolve(response)
