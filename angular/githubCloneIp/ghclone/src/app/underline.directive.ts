@@ -5,8 +5,7 @@ import { Directive, HostListener, ElementRef } from '@angular/core';
 })
 export class UnderlineDirective {
   constructor(private elem:ElementRef){}
-// Event listeners for element hosting
-// the directive
+
 @HostListener('mouseenter') onMouseEnter() {
   this.textDeco("underline")
 }
