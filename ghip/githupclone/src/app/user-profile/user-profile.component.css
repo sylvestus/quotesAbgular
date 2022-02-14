@@ -1,0 +1,50 @@
+.card {
+    height: 300px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px 5px #888888;
+    background-color: #ffffff;
+  }
+  .btn {
+    position: absolute;
+    bottom: 5px;
+  }
+  .profile {
+  }
+  .profile img {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 40px;
+  }
+  .profileinfo {
+    margin-bottom: 40px;
+  }
+  .cont {
+    background-color: #e7f1fc;
+  
+  }
+  .footer {
+    background-color: antiquewhite;
+    height: 70px;
+  }
+  .footer.fa {
+    height: 30px;
+  }
+  .gh img {
+    height: 250px;
+    width: 250px;
+    float: right;
+    margin-right: 40%;
+    margin-top: 14%;
+  }
+  .logo img {
+    height: 100px;
+   
+  }
+  .logo h4{
+      text-align: center;
+  }
+  .repo h3{
+      text-align:center;
+      margin-bottom: 20px
+  }
+  
