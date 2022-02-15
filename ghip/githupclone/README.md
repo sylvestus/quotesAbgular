@@ -1,16 +1,28 @@
 
 # github clone website
-#### This is a e commerce sice for our letuce eat restaurant, 31 oct 2021
+#### This is a github api app that consumes ghit hub api and let users search for any github user and see their repositories
 #### By ** sylvestus sigei **
 ## Description
-This is a e-commerce ui developed for a lettuce eat restaurant consumption
+This is a github api app users of this app can search for any user of git hub see their repositories and even navigate to their git hub accout shoul the want to see more
 ## Setup/Installation Requirements
-This site is hosted in gh-pages on ..............url
+node js
+npm
+vs code
+typescript
+bootsrap 
+google fonts
+font awsome icons
 
 ## Known Bugs
-This being a simple ui it has no known bugs though updates are always being made as per user feedback to maximize on productivity
-## Technologies Used
-This site only uses html and css for implementation 
+the api key was revoked a coulple of time by ithub but the problem was overcomed
+## thTechnologies Used
+node js
+npm
+vs code
+typescript
+bootsrap 
+google fonts
+font awsome icons
 ## Support and contact details
 Incase of any issues contact me on:
 sylvestus.sigei@student.moringa.com
