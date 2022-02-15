@@ -28,15 +28,15 @@ export class UserProfileRequestService {
       email: string;
       created_at:string
     }
-    let headers = new HttpHeaders({
-      Authorization: 'token ' + environment.apiKey,
-    });
-    let options = { headers: headers };
-    let final_url = environment.apiUrl + searchItem + '?api_Key=' + environment.apiKey;
+    // let headers = new HttpHeaders({
+    //   Authorization: 'token ' + environment.ke,
+    // });
+    // let options = { headers: headers };
+    let final_url = environment.apiUrl + searchItem + '?api_Key=' + environment.apiKey
     
     let promise = new Promise((resolve, reject) => {
       this.http
-        .get<ApiResponseI>(final_url, options)
+        .get<ApiResponseI>(final_url)
         .toPromise()
         .then(
           (response) => {
@@ -69,7 +69,7 @@ export class UserProfileRequestService {
       description: string;
       language: string;
     }
-    let url = environment.apiUrl  + searchItem + '/repos'+ '?api_Key=' + environment.apiKey;
+    let url = environment.apiUrl  + searchItem + '/repos'//+'?api_Key=' + environment.apiKey;
   let promise = new Promise((resolve, reject) => { 
     this.http.get<ApiResponseII>(url).toPromise().then(response => {
       this.userRepos=response!;
