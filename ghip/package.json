@@ -5,5 +5,8 @@
     "font-awesome": "^4.7.0",
     "ngx-bootstrap": "^8.0.0",
     "typeface-muli": "^1.1.13"
+  },
+  "devDependencies": {
+    "angular-cli-ghpages": "^1.0.0"
   }
 }
